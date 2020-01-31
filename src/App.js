@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Route, Switch, Router, BrowserRouter, Link } from "react-router-dom";
+import { Route, Switch, BrowserRouter, Link } from "react-router-dom";
 import ReactTodoModal from "./components/react-todo-modal/ReactTodoModal";
 import { HOME_ROUTE_PATH, TODO_MODAL_ROUTE_PATH } from "./config/routes";
 
