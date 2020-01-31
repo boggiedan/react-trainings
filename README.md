@@ -1,3 +1,7 @@
+## Introduction
+
+This little project is my training project whenever I want to test some stuff with react. Feel free to use it as you wish.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -2,13 +2,16 @@
   "name": "react-trainings",
   "version": "0.1.0",
   "private": true,
+  "author": "Sukmanov Bogdan",
+  "repository": "https://github.com/boggiedan/react-trainings.git",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.1"
+    "react-scripts": "3.3.1",
+    "react-router-dom": "^5.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
