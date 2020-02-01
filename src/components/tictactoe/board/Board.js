@@ -50,17 +50,18 @@ const Board = () => {
 
   const userPlayedHandler = position => {
     const newStep = currentStep + 1;
+    const newHistory = history;
 
-    history.values[position] = getUserValue();
-    history.steps[position] = newStep;
+    newHistory.values[position] = getUserValue();
+    newHistory.steps[position] = newStep;
 
-    if (calculateWinner(history.values)) {
+    if (calculateWinner(newHistory.values)) {
       setIsGameFinished(true);
 
       return;
     }
 
-    setHistory(history);
+    setHistory(newHistory);
     setCurrentStep(newStep);
     setIsXNext(!isXNext);
   };
