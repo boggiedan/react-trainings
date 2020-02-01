@@ -2,7 +2,12 @@ import React from "react";
 import "./App.css";
 import { Route, Switch, BrowserRouter, Link } from "react-router-dom";
 import ReactTodoModal from "./components/react-todo-modal/ReactTodoModal";
-import { HOME_ROUTE_PATH, TODO_MODAL_ROUTE_PATH } from "./config/routes";
+import {
+  HOME_ROUTE_PATH,
+  TODO_MODAL_ROUTE_PATH,
+  TIC_TACT_TOE_ROUTE_PATH
+} from "./config/routes";
+import TicTacToe from "./components/tictactoe/TicTacToe";
 
 function App() {
   return (
@@ -10,6 +15,9 @@ function App() {
       <div className="navigation-container">
         <Link to={HOME_ROUTE_PATH}>Home</Link>
         <Link to={TODO_MODAL_ROUTE_PATH}>Modal todo exercice</Link>
+        <Link to={TIC_TACT_TOE_ROUTE_PATH}>
+          Tic tac toe exercise (with hooks)
+        </Link>
       </div>
       <Switch>
         <Route exact path={HOME_ROUTE_PATH}>
@@ -21,6 +29,7 @@ function App() {
           </div>
         </Route>
         <Route path={TODO_MODAL_ROUTE_PATH} component={ReactTodoModal} />
+        <Route path={TIC_TACT_TOE_ROUTE_PATH} component={TicTacToe} />
       </Switch>
     </BrowserRouter>
   );

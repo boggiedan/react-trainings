@@ -1,0 +1,40 @@
+.tic-tac-toe-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.tic-tac-toe-board {
+  width: 600px;
+  height: 600px;
+  padding: 50px;
+}
+
+.tic-tac-toe-row {
+  display: flex;
+}
+
+.tic-tac-toe-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border: solid 1px cadetblue;
+}
+
+.tic-tac-toe-value {
+  font-size: 3em;
+  color: dodgerblue;
+}
+
+.tic-tac-toe-moves-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tic-tac-toe-move {
+  margin: 10px;
+}
